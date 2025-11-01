@@ -1,0 +1,217 @@
+/* Thema afgestemd op de homepage: rode titels, gele primaire knop, lichte kaarten */
+
+/* pagina wrapper */
+.teams-page {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 36px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+  color: #111827;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* grote, opvallende titel zoals op de homepage */
+.teams-page h1 {
+  color: #d91b1b; /* opvallend rood */
+  font-size: 2.25rem;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+}
+
+/* subtitel / telling */
+.teams-page p {
+  color: #333;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* formulier */
+.team-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.team-form input {
+  padding: 10px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  min-width: 260px;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* knoppen: primaire stijl gelijk aan homepage (geel met blauwe tekst) */
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn.primary {
+  background: #ffd300; /* geel */
+  color: #1a4fb4;     /* donkerblauw tekst (homepage-stijl) */
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+.btn.danger {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 18px rgba(225,29,72,0.12);
+}
+
+/* team lijst grid en kaart */
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.05);
+  border: 1px solid #f1f5f9;
+}
+.team-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+}
+.team-card h3 a {
+  color: #6b21a8; /* behoud paarse linkkleur voor titels */
+  text-decoration: underline;
+}
+.team-count {
+  margin: 0 0 12px 0;
+  color: #555;
+}
+.team-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* team-detail roster */
+.roster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.roster-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.05);
+  border: 1px solid #f1f5f9;
+}
+.roster-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+  margin: 6px auto;
+}
+.roster-card h4 {
+  margin: 8px 0 10px 0;
+  color: #3b2a72;
+}
+
+/* pokemon-kaarten in lijst (pocket) */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+.pokemon-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.05);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+.pokemon-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  margin: 6px auto;
+}
+.pokemon-card h3 {
+  margin: 8px 0;
+  color: #6b21a8;
+  text-decoration: underline;
+}
+
+/* knoppen binnen pokemon-card */
+.pokemon-card .btn {
+  width: auto;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.pokemon-card .btn.primary {
+  background: #ffd300;
+  color: #1a4fb4;
+  border: none;
+}
+
+/* terug-link */
+.teams-page a {
+  color: #6b21a8;
+  text-decoration: underline;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #6b21a8; /* paarse linkkleur */
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.roster-card a.pokemon-link,
+.roster-card a {
+  color: #6b21a8;
+  text-decoration: underline;
+}
+
+.roster-card h4 {
+  margin: 8px 0 10px 0;
+  color: #6b21a8;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* zorg dat pokemon-link stijl consistent is */
+.pokemon-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+/* ...existing code... */
+
+/* responsive */
+@media (max-width: 700px) {
+  .teams-page { padding: 18px; margin: 12px; }
+  .team-form { flex-direction: column; align-items: stretch; }
+  .team-form input { width: 100%; }
+  .team-list { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .pokemon-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .roster { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
