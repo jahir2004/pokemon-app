@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/jahir2004/pokemon-app.git"
   },
   "dependencies": {
     "pokenode-ts": "^1.20.0",
